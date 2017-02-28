@@ -10,7 +10,7 @@ public class Problem2 {
 		int num = 3;
 		int sum = 0;
 		int fibNum = 0;
-		final int max = 4000000;
+		final int MAX = 4000000;
 		
 		do{
 			fibNum = Fibonacci(num);
@@ -19,7 +19,7 @@ public class Problem2 {
 			
 			num++;
 			
-		}while(fibNum <= max);
+		}while(fibNum <= MAX);
 		
 		System.out.println(sum);
 	}
