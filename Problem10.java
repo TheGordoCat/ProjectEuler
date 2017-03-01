@@ -1,4 +1,4 @@
-//Sean Gordon
+//Sean Gordon 3/1/17
 //the answer is 142913828922
 
 package ProjectEuler;
