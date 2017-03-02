@@ -1,4 +1,5 @@
 //Sean Gordon, 3/1/17
+//revised on 3/1/17 but later in the day
 //the answer is 142913828922
 
 package ProjectEuler;
