@@ -1,5 +1,6 @@
 //Sean Gordon, 3/1/17
 //tired of copy paste
+//this file will be used to store the methods that calculate different things
 package ProjectEuler;
 
 public class NumberMethods {
