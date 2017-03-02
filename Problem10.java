@@ -8,7 +8,7 @@ public class Problem10 {
 	public static void main(String args[]){
 		
 		long sum = 0;
-		for (int i = 2; i < 2000000; i++){
+		for (int i = 1; i < 2000000; i++){
 			if (isPrime(i))
 				sum += i;
 		}
@@ -19,6 +19,8 @@ public class Problem10 {
 	//I used to find the hcf and determine if phi(i) = i - 1
 	public static boolean isPrime(int num){
 		
+		if (num <= 1)
+			return false;
 		if (num == 2)
 			return true;
 		if (num % 2 == 0)
