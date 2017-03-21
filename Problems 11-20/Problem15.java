@@ -25,8 +25,7 @@ public class Problem15 {
 	
 	public static BigInteger getPathNums(int num){
 
-		String number = num + ""; 
-		BigInteger n = new BigInteger(number);
+		BigInteger n = new BigInteger(num + "");
 		
 		BigInteger totalChoices = factorial(n.multiply(new BigInteger("2")));
 		BigInteger repeatingChoices = factorial(n);
