@@ -1,5 +1,5 @@
 //Sean Gordon 3/21/17
-//the answer is 648
+//the answer for 100 is 648
 
 
 package ProjectEuler;
