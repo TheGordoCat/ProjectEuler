@@ -38,13 +38,10 @@ public class Problem15 {
 
 	public static BigInteger factorial(BigInteger num){
 		
-		String number = num + "";
-		BigInteger n = new BigInteger(number);
-		
-		if (n.equals(BigInteger.ZERO) || n.equals(BigInteger.ONE))
+		if (num.equals(BigInteger.ZERO) || num.equals(BigInteger.ONE))
 			return new BigInteger("1");
 		else
-			return n.multiply(factorial(n.subtract(new BigInteger("1"))));
+			return num.multiply(factorial(num.subtract(new BigInteger("1"))));
 	}
 	
 	
