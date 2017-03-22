@@ -23,30 +23,7 @@ public class Problem15 {
 		
 	}
 	
-	/*public static BigInteger getPathNums(int num){
-
-		BigInteger n = new BigInteger(num + "");
-		
-		BigInteger totalChoices = factorial(n.multiply(new BigInteger("2")));
-		BigInteger repeatingChoices = factorial(n);
-		
-		BigInteger pathNums = totalChoices.divide(repeatingChoices.multiply(repeatingChoices));
-		
-		return pathNums;
-	}*/
-
-	public static BigInteger factorial(BigInteger num){
-		
-		if (num.equals(BigInteger.ZERO) || num.equals(BigInteger.ONE))
-			return new BigInteger("1");
-		else
-			return num.multiply(factorial(num.subtract(new BigInteger("1"))));
-	}
 	
-	
-	
-	//this algorithm actually works lmao
-	//this was my first solution, but I forgot about the choose function
 	public static long getPathNums(int n){
 
 		long numArray[] = new long[n];
