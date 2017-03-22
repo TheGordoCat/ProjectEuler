@@ -20,7 +20,6 @@ public class Problem15 {
 		
 		System.out.println(sum);
 		keyboard.close();
-		
 	}
 	
 	public static BigInteger getPathNums(int num){
