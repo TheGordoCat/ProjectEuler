@@ -42,38 +42,4 @@ public class Problem15 {
 		else
 			return num.multiply(factorial(num.subtract(new BigInteger("1"))));
 	}
-	
-	
-	
-	//this algorithm actually works lmao
-	//this was my first solution, but I forgot about the choose function
-	/*public static long getPathNums(int n){
-
-		long numArray[] = new long[n];
-		long sum = 1;
-		int count = 0;
-		long arraySum = 0;
-		
-		for (int i = 0; i < n; i++){
-			numArray[i] = 1;
-			sum += numArray[i];
-		}
-		
-		while (count < n - 2){
-			
-			for (int i = n-1; i >= 0; i--){
-				for (int j = 0; j <= i; j++){
-					
-					arraySum += numArray[j];
-				}
-				
-				numArray[i] = arraySum;
-				arraySum = 0;
-				sum += numArray[i];
-			}
-			count++;
-		}
-		
-		return sum * 2;
-	}*/
 }
