@@ -14,7 +14,7 @@ public class Problem22 {
 
 	public static void main(String args[]) throws IOException{
 		
-		Scanner input = new Scanner(new File("C:/Users/Sean/workspace/ProgrammingByDoing/src/ProjectEuler/problem22.txt")).useDelimiter("[\",]+");
+		Scanner input = new Scanner(new File("problem22.txt")).useDelimiter("[\",]+");
 		
 		List<String> names = new ArrayList<String>();
 		while (input.hasNext()) {
