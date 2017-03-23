@@ -12,7 +12,7 @@ public class Problem8 {
 	
 	public static void main(String args[]) throws IOException{
 		
-		String numString = readFileAsString("C:/Users/Sean/workspace/ProgrammingByDoing/src/ProjectEuler/number.txt");
+		String numString = readFileAsString("problem8.txt");
 		final int SUBSTRING_LENGTH = 13;
 		long multiple = 0;
 		long maxValue = 0;
