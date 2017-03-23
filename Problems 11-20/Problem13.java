@@ -13,7 +13,7 @@ public class Problem13 {
 
 	public static void main(String args[]) throws IOException{
 	
-			Scanner input = new Scanner(new File("C:/Users/Sean/workspace/ProgrammingByDoing/src/ProjectEuler/problem13.txt"));
+			Scanner input = new Scanner(new File("problem13.txt"));
 			
 			List<BigInteger> lines = new ArrayList<BigInteger>();
 			while (input.hasNextLine()) {
