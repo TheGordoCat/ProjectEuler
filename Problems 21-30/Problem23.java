@@ -24,7 +24,7 @@ public class Problem23 {
 		}
 		
 		for (int i = 0; i < abundantNums.size(); i++)
-			for (int j = i; j < abundantNums.size() - i; j++)
+			for (int j = i; j < abundantNums.size(); j++)
 				if (abundantNums.get(i) + abundantNums.get(j) <= MAX_NUM)
 					sumsOfAbundants.add(abundantNums.get(i) + abundantNums.get(j));
 				
