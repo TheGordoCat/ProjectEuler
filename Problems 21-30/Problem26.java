@@ -32,7 +32,7 @@ public class Problem26 {
 		if (p == 2 || p == 5)
 			return false;
 	
-		//check if the order of 10 mod p is less than p-1
+		//check if the order of 10 is less than p-1 mod p
 		for (int i = 1; i <= (p-1) / 2; i++){
 			if(i != 1 && (p-1) % i == 0)
 				if ((BigInteger.TEN).pow(i).mod(new BigInteger(p + "")).equals(BigInteger.ONE))
