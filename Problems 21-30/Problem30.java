@@ -9,7 +9,6 @@ public class Problem30 {
 		
 		/*solve for n*(9^5) = 10^n to get the upper bound
 		 * n < 6 so we choose 10^6 to be the limit */
-		
 		final int LIMIT = 1000000;
 		long sum = 0;
 		
