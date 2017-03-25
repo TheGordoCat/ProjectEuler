@@ -8,8 +8,7 @@ public class Problem34 {
 	public static void main(String args[]){
 		
 		/*We check for the upper bound with 7 * (9!) which would be for 9999999
-		 * 8 * (9!) is a 7 digit number, so anything higher is pointless to check
-		 */
+		 * 8 * (9!) is a 7 digit number, so anything higher is pointless to check */
 		final int UPPER_LIMIT = 10000000;
 		final int LOWER_LIMIT = 3;
 		long sum = 0;
