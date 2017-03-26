@@ -9,13 +9,13 @@ public class Problem35 {
 	public static void main(String args[]){
 		
 		long start = System.currentTimeMillis();
-		Problem23();
+		run();
 		long end = System.currentTimeMillis();
 		System.out.println((double) (end - start) / 1000 + " seconds");
 	}
 	
 	
-	public static void Problem23(){
+	public static void run(){
 		
 		final int LIMIT = 1000000;
 		int count = 0;
