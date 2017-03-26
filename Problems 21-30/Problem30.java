@@ -12,7 +12,7 @@ public class Problem30 {
 		final int LIMIT = 1000000;
 		long sum = 0;
 		
-		for (int i = 2; i <= LIMIT; i++){
+		for (int i = 2; i < LIMIT; i++){
 			if(isSumOfFifthPowers(i))
 				sum += i;
 		}
