@@ -22,7 +22,7 @@ public class Problem42 {
 	
 	public static void run() throws FileNotFoundException{
 		
-		Scanner input = new Scanner(new File("C:/Users/Sean/workspace/ProgrammingByDoing/src/ProjectEuler/problem42.txt")).useDelimiter("[\",]+");
+		Scanner input = new Scanner(new File("problem42.txt")).useDelimiter("[\",]+");
 		
 		List<Integer> letterSums = new ArrayList<Integer>();
 		while (input.hasNext()) {
