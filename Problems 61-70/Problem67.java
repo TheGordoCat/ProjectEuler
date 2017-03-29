@@ -21,7 +21,7 @@ public class Problem67 {
 	
 	public static void run() throws FileNotFoundException{
 	
-		Scanner input = new Scanner(new File("C:/Users/Sean/workspace/ProgrammingByDoing/src/ProjectEuler/problem67.txt"));
+		Scanner input = new Scanner(new File("problem67.txt"));
 		int[][] triangle = new int[100][100];
 		
 		for (int i = 0; i < triangle.length; i++)
