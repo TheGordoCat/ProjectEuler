@@ -5,10 +5,6 @@ package ProjectEuler;
 
 public class NumberMethods {
 
-	public NumberMethods(){
-		
-	}
-	
 	
 	//simpler, more efficient way to find primes
 	public boolean isPrime(long num){
