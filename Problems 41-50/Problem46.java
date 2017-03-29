@@ -1,6 +1,6 @@
 //Sean Gordon, 3/28/17
 //the answer is 5777
-//run-time is 1.171 seconds
+//run-time is 1.443 seconds
 
 package ProjectEuler;
 
@@ -35,7 +35,7 @@ public class Problem46 {
 		
 		/* We have that num = p + 2s^2 where p is prime and s is a number.
 		 * Then num > 2*i*i and num > j */
-		for (long i = 1; i*i < num/2; i++)
+		for (long i = 0; i*i < num/2; i++)
 			for (long j = 2; j < num; j++)
 				if (numberMethods.isPrime(j) && num == j + 2*i*i)
 					return true;
