@@ -36,7 +36,7 @@ public class Problem49 {
 					
 					int difference = primes.get(j) - primes.get(i);
 					if (primes.contains(primes.get(j) + difference) && isPermutation(primes.get(i), primes.get(j) + difference)){
-						System.out.println(primes.get(i) + " " + primes.get(j) + " " + (primes.get(j) + difference));
+						System.out.println(primes.get(i) + primes.get(j) + (primes.get(j) + difference));
 						break outerloop;
 					}
 				}
