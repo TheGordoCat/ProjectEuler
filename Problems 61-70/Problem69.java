@@ -21,18 +21,8 @@ public class Problem69 {
 		final int LIMIT = 1000;
 		double maxValue = 0;
 		int maxNum = 0;
-			
-		for (int i = 2; i <= LIMIT; i++){
-				
-			double value = ((double)(i) / (numberMethods.phi(i)));
-			if (value > maxValue){
-				maxValue = value;
-				maxNum = i;
-			}
-		}
 		
-		
-		for (int i = 2; i <= LIMIT; i++)
+		for (int i = 1; i <= LIMIT; i++)
 			for (int j = i; j <= LIMIT; j++){
 				
 				if (numberMethods.hcf(i, j) == 1){
