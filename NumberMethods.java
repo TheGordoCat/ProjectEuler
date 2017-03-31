@@ -27,7 +27,10 @@ public class NumberMethods {
 	//finds the amount of numbers coprime to a number
 	//if phi(num) = num - 1, then num is a prime
 	public static long phi(long num){
-					
+		
+		if (num == 1)
+			return 1;
+		
 		long count = 0;
 		for(long i = 1; i < num; i++){
 			if (hcf(num, i) == 1)
