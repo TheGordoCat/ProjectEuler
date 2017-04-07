@@ -1,44 +1,44 @@
-//Sean Gordon, 3/17/20
+//Sean Gordon, 3/17/20 (updated 4/6/17)
 //the answer is 137846528820
+//run-time is 9.626x10^-4 seconds
 
 package ProjectEuler;
 
-import java.util.Scanner;
 import java.math.BigInteger;
 
 public class Problem15 {
-
-	public static int gridNumber = 0;
 	
 	public static void main(String args[]){
 		
-		System.out.println("enter num: ");
+		long start = System.nanoTime();
+		run();
+		long end = System.nanoTime();
+		System.out.println((double) (end - start) / 1000000000 + " seconds");
+	}
+	
+	public static void run(){
 		
-		Scanner keyboard = new Scanner(System.in);
-		gridNumber = keyboard.nextInt();
-		BigInteger sum = getPathNums(gridNumber);
-		
+		final int GRID_NUMBER = 20;
+		BigInteger sum = getPathNums(GRID_NUMBER);
 		System.out.println(sum);
-		keyboard.close();
+		
 	}
 	
 	public static BigInteger getPathNums(int num){
 
-		BigInteger n = new BigInteger(num + "");
-		
-		BigInteger totalChoices = factorial(n.multiply(new BigInteger("2")));
-		BigInteger repeatingChoices = factorial(n);
+		BigInteger totalChoices = factorial(2*num);
+		BigInteger repeatingChoices = factorial(num);
 		
 		BigInteger pathNums = totalChoices.divide(repeatingChoices.multiply(repeatingChoices));
 		
 		return pathNums;
 	}
 
-	public static BigInteger factorial(BigInteger num){
+	public static BigInteger factorial(int num){
 		
-		if (num.equals(BigInteger.ZERO) || num.equals(BigInteger.ONE))
-			return new BigInteger("1");
+		if (num == 0 || num == 1)
+			return BigInteger.ONE;
 		else
-			return num.multiply(factorial(num.subtract(new BigInteger("1"))));
+			return BigInteger.valueOf(num).multiply(factorial(num-1));
 	}
 }
