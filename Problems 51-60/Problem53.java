@@ -25,7 +25,7 @@ public class Problem53 {
 		for (int i = 0; i <= LIMIT; i++)
 			factorials[i] = factorial(i);
 		
-		for (int n = 1; n <= LIMIT; n++)
+		for (int n = 23; n <= LIMIT; n++)
 			for (int r = 0; r <= n/2; r++){
 				
 				BigInteger choose = factorials[n].divide(factorials[r].multiply(factorials[n-r]));
