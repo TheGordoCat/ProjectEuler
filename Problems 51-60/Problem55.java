@@ -1,6 +1,6 @@
 //Sean Gordon, 4/9/17
 //the answer is 249
-//run-time is .078 seconds
+//run-time is .094 seconds
 
 package ProjectEuler;
 
@@ -58,7 +58,7 @@ public static void main(String args[]){
 	public static boolean isPalindrome(BigInteger n){
 		
 		String num = n.toString();
-		for (int i = 0; i < num.length(); i++)
+		for (int i = 0; i < num.length()/2; i++)
 			if (num.charAt(i) != num.charAt(num.length()-i-1))
 				return false;
 		
