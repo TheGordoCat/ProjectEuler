@@ -22,7 +22,7 @@ public static void main(String args[]){
 		
 		for (int i = 1; i < 10; i++){
 			
-			boolean terminates = false; //what power does the argument terminate for?
+			boolean terminates = false; 			// dictates when to move on to the next integer
 			for (int j = 1; !terminates; j++)
 				if (BigInteger.valueOf(i).pow(j).toString().length() != j)
 					terminates = true;
