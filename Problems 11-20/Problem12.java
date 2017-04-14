@@ -1,6 +1,6 @@
 //Sean Gordon, 3/8/17 (updated 4/13/17)
 //the answer is 76576500
-//run-time is .226
+//run-time is .226 seconds
 
 package ProjectEuler;
 
