@@ -1,6 +1,6 @@
 //Sean Gordon, 3/29/17
 //the answer is 1074
-//run-time is .031 seconds
+//run-time is .025 seconds
 
 package ProjectEuler;
 
@@ -33,5 +33,6 @@ public class Problem18 {
 				triangle[i][j] += Math.max(triangle[i+1][j], triangle[i+1][j+1]);
 		
 		System.out.println(triangle[0][0]);
+		input.close();
 	}
 }
