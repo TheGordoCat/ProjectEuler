@@ -52,6 +52,7 @@ public class Problem11 {
 			}
 		}
 		System.out.println(max);
+		input.close();
 	}
 	
 	
