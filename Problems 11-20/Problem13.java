@@ -23,7 +23,7 @@ public class Problem13 {
 			
 	public static void run() throws FileNotFoundException{
 	
-		Scanner input = new Scanner(new File("C:/Users/Sean/workspace/ProgrammingByDoing/src/ProjectEuler/problem13.txt"));
+		Scanner input = new Scanner(new File("problem13.txt"));
 			
 		ArrayList<BigInteger> lines = new ArrayList<BigInteger>();
 		while (input.hasNextLine()) {
