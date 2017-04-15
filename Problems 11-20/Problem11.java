@@ -23,7 +23,7 @@ public class Problem11 {
 		
 	public static void run() throws FileNotFoundException{
 		
-		Scanner input = new Scanner(new File("C:/Users/Sean/workspace/ProgrammingByDoing/src/ProjectEuler/problem11.txt"));
+		Scanner input = new Scanner(new File("problem11.txt"));
 		
 		int[][] numArray = new int[20][20];
 		for (int i = 0; i < numArray.length; i++)
