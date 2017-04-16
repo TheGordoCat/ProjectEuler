@@ -21,7 +21,7 @@ public class Problem8 {
 			
 	public static void run() throws FileNotFoundException{
 		
-		Scanner input = new Scanner(new File("C:/Users/Sean/workspace/ProgrammingByDoing/src/ProjectEuler/problem8.txt"));
+		Scanner input = new Scanner(new File("problem8.txt"));
 		
 		String numString = "";
 		while(input.hasNext())
