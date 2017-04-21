@@ -1,6 +1,7 @@
 //Sean Gordon, 4/20/17 lmao
 //the answer is 55374
 //run-time is 3.287 seconds
+//use Euler's partition theorem using the generalized pentagons
 
 package ProjectEuler;
 
@@ -31,13 +32,15 @@ public class Problem78 {
 			
 			for (int j = 1; penta <= i ; j++){	
 				
+				BigInteger sign = BigInteger.valueOf((int)(Math.pow(-1, j-1)));
 				penta = j*(3*j - 1)/2;
+				
 				if (penta <= i)
-					sum = sum.add(BigInteger.valueOf((int)(Math.pow(-1, j-1))).multiply(probabilities.get(i - penta)));
+					sum = sum.add(sign.multiply(probabilities.get(i - penta)));
 				
 				penta = (-1)*j*((-1)*3*j - 1)/2;
 				if (penta <= i)
-					sum = sum.add(BigInteger.valueOf((int)(Math.pow(-1, j-1))).multiply(probabilities.get(i - penta)));
+					sum = sum.add(sign.multiply(probabilities.get(i - penta)));
 			}
 			
 			probabilities.add(sum);
