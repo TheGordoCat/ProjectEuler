@@ -20,7 +20,7 @@ public class Problem81 {
 		
 	public static void run() throws FileNotFoundException{
 		
-		Scanner input = new Scanner(new File("C:/Users/Sean/workspace/ProgrammingByDoing/src/ProjectEuler/problem81.txt"));
+		Scanner input = new Scanner(new File("problem81.txt"));
 		
 		int[][] matrix = new int[80][80];
 		for (int i = 0; i < matrix.length; i++){
